@@ -45,7 +45,16 @@ uart_driver.c       → UART logging
 scheduler.c         → 100 ms scheduler
 indicator_logic.c   → Indicator state machine logic
 
+## Demonstration
+
+The system implements an indicator control ECU with the following behaviors:
+
+• Left button press → Left indicator blinking  
+• Right button press → Right indicator blinking  
+• Both buttons pressed → Hazard mode  
+• LED blinking interval = 300 ms  
+• Task scheduler interval = 100 ms
+
 ## Author
 
 Swetha K
-Electronics and Communication Engineering
