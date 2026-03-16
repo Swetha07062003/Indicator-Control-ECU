@@ -1,28 +1,21 @@
-Embedded Software Assignment – Indicator Control ECU
+# Indicator Control ECU
 
-This project implements an automotive-style Indicator Control ECU using
-a layered embedded software architecture.
+Embedded Software Assignment – Indicator Control ECU.
+
+## Project Description
+
+This project implements an automotive-style Indicator Control ECU
+using a layered embedded software architecture.
 
 Features implemented:
 
-• Left Indicator Control
-• Right Indicator Control
-• Hazard Light Mode
-• 100 ms Task Scheduler
-• UART Event Logging
-# Indicator Control ECU
+* Left Indicator Control
+* Right Indicator Control
+* Hazard Mode
+* 100 ms Task Scheduler
+* UART Event Logging
 
-Embedded software assignment for Gray Mobility.
-
-## Features
-
-- Left indicator control
-- Right indicator control
-- Hazard lights
-- 100 ms scheduler
-- UART event logging
-
-## Architecture
+## System Architecture
 
 Application Software
 ↓
@@ -34,9 +27,25 @@ Hardware Layer
 
 ## State Machine
 
-States implemented:
+The system contains the following states:
 
-- IDLE
-- LEFT_ACTIVE
-- RIGHT_ACTIVE
-- HAZARD_ACTIVE
+* IDLE
+* LEFT_ACTIVE
+* RIGHT_ACTIVE
+* HAZARD_ACTIVE
+
+Transitions between states are triggered by push-button inputs.
+
+## Project Structure
+
+main.c              → Main program
+gpio_driver.c       → Button input handling
+pwm_driver.c        → LED output control
+uart_driver.c       → UART logging
+scheduler.c         → 100 ms scheduler
+indicator_logic.c   → Indicator state machine logic
+
+## Author
+
+Swetha K
+Electronics and Communication Engineering
