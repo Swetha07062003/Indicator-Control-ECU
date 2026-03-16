@@ -1,3 +1,15 @@
+Embedded Software Assignment – Indicator Control ECU
+
+This project implements an automotive-style Indicator Control ECU using
+a layered embedded software architecture.
+
+Features implemented:
+
+• Left Indicator Control
+• Right Indicator Control
+• Hazard Light Mode
+• 100 ms Task Scheduler
+• UART Event Logging
 # Indicator Control ECU
 
 Embedded software assignment for Gray Mobility.
